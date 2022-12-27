@@ -3,6 +3,8 @@
         <title>Downloads - PixelExtended</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="loadData.js"></script>
+        <script src="dataLoad.js"></script>
     </head>
     <body>
         <div class="sidebar">
@@ -30,10 +32,21 @@
             </div>
             <div class="device-list">
                 <div class="device">
-                    <div id="data"></div>
+                    <div class="data">
+                        <ul id="samsung-devices" class="hide">
+                            <!-- Add device elements here -->
+                        </ul>
+                        
+                        <ul id="oneplus-devices" class="hide">
+                            <!-- Add device elements here -->
+                        </ul>
+                        
+                        <ul id="xiaomi-devices" class="hide">
+                            <!-- Add device elements here -->
+                        </ul> 
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="dataLoad.js"></script>
     </body>
 </html>
