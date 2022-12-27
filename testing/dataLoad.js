@@ -1,32 +1,22 @@
 function xiaomi() {
     console.log("Loading Xiaomi");
     document.getElementById("heading").innerHTML = "Xiaomi";
+    document.getElementById('xiaomi-devices').classList.remove('hide');
+    document.getElementById('oneplus-devices').classList.add('hide');
+    document.getElementById('samsung-devices').classList.add('hide');
 };
 
 function oneplus() {
     console.log("Loading OnePlus");
     document.getElementById("heading").innerHTML = "OnePlus";
-
-    const filePath = 'combined.json';
-    const searchItem = 'lemonade';
-
-    fetch(filePath)
-      .then(response => response.json())
-      .then(data => {
-        for (const item of data) {
-            if (item.hasOwnProperty(searchItem)) {
-                console.log('Device: ${item.device}');
-                console.log('Device Name: ${item.device_name}');
-                console.log('TG Username: ${item.tg_username}');
-            }
-        }
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    document.getElementById('oneplus-devices').classList.remove('hide');
+    document.getElementById('xiaomi-devices').classList.add('hide');
+    document.getElementById('samsung-devices').classList.add('hide');
 };
-
 function samsung() {
     console.log("Loading Samsung");
     document.getElementById("heading").innerHTML = "Samsung";
-};
+    document.getElementById('samsung-devices').classList.remove('hide');
+    document.getElementById('oneplus-devices').classList.add('hide');
+    document.getElementById('xiaomi-devices').classList.add('hide');
+}
