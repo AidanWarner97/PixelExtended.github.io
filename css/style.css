@@ -1,3 +1,46 @@
-html {
+html,body {
     margin:0;
+}
+
+header {
+    border: 3px dashed red;
+    height:100px;
+    display:flex;
+    width:100vw;
+}
+
+#logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+#logo h1 {
+    margin: 0 auto;
+}
+
+nav {
+    height: inherit;
+    display: flex;
+    right:0;
+    position:absolute;
+}
+
+nav ul {
+    list-style: none;
+    display:inline-flex;
+}
+
+nav ul a {
+    height:100%;
+    border-radius: 25px;
+    background-color: #868686;
+    margin: auto 5px;
+}
+
+nav ul li {
+    width:130px;
+    height:inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
